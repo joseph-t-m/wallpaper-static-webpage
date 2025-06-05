@@ -1,0 +1,205 @@
+/* Loder */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-size: cover;
+}
+
+.Loading-Page {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #0d4b92;
+    transition: ease all .5s;
+    justify-content: center;
+    cursor: not-allowed;
+    align-items: center;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Loader {
+    border: 16px solid #0D4C92;
+    border-top: 16px solid #A0E4CB;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0px 0px 25px #A0E4CB;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        background-color: #cff5e783;
+    }
+
+    50% {
+        background-color: #CFF5E7;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #cff5e783;
+    }
+}
+
+
+.Loading-Page1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    transition: ease all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+.Loader1 {
+    animation: rotate 2s infinite;
+    height: 50px;
+    width: 50px;
+}
+
+.Loader1:before,
+.Loader1:after {
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.Loader1:before {
+    animation: ball1 2s infinite;
+    background-color: #A0E4CB;
+    /* در عوض بهش باکس شادو بده */
+    /* border: 1px solid #0D4C92; */
+    box-shadow: 0 0 18px 4px #A0E4CB;
+    margin-bottom: 10px;
+}
+
+.Loader1:after {
+    animation: ball3 2s infinite;
+    background-color: #0D4C92;
+    /* border: 1px solid #59C1BD; */
+    /* در عوض بهش باکس شادو بده */
+    box-shadow: 0 0 18px #59C1BD, 0 0 45px #59C1BD, 0 0 50px #59C1BD, 0 0 100px #59C1BD;
+}
+
+@keyframes rotate {
+    0% {
+        /* border: 3px solid #A0E4CB;
+        border-radius: 50%; */
+        -webkit-transform: rotate(0deg) scale(0.8);
+        -moz-transform: rotate(0deg) scale(0.8);
+    }
+
+    50% {
+        /* border: 3px solid #0D4C92;
+        border-radius: 50%; */
+        -webkit-transform: rotate(360deg) scale(1.2);
+        -moz-transform: rotate(360deg) scale(1.2);
+    }
+
+    100% {
+        /* border: 3px solid #A0E4CB;
+        border-radius: 50%; */
+        -webkit-transform: rotate(720deg) scale(0.8);
+        -moz-transform: rotate(720deg) scale(0.8);
+    }
+}
+
+@keyframes ball1 {
+    0% {
+        box-shadow: 30px 0 0 #0D4C92;
+    }
+
+    50% {
+        box-shadow: 0 0 0 #0D4C92;
+        margin-bottom: 0;
+        -webkit-transform: translate(15px, 15px);
+        -moz-transform: translate(15px, 15px);
+    }
+
+    100% {
+        box-shadow: 30px 0 0 #0D4C92;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes ball3 {
+    0% {
+        box-shadow: 30px 0 0 #0D4C92;
+
+    }
+
+    50% {
+        box-shadow: 0 0 0 #0D4C92;
+        margin-top: -20px;
+        -webkit-transform: translate(15px, 15px);
+        -moz-transform: translate(15px, 15px);
+    }
+
+    100% {
+        box-shadow: 30px 0 0 #0D4C92;
+
+        margin-top: 0;
+    }
+}
+
+/* ULoder */
+
+
+
+
+/* Click Bulb */
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #A0E4CB;
+    animation: wave 0.5s forwards;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 #A0E4CB;
+}
+
+@keyframes wave {
+    0% {
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+    }
+
+    90% {
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+/* UClick Bulb */

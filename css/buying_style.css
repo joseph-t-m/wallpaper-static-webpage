@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url(https://db.onlinewebfonts.com/c/0b0a8c345731751b990403a2cf40fbec?family=IRAN+Sans);
+@import url(https://db.onlinewebfonts.com/c/a0ea7e7833cd4f7694a4913fccb9aacf?family=B+Titr);
+
+/*  */
+/* Table Table Table Table Table */
+/*  */
+h2 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+.container {
+    border: 1px solid #291a1a;
+    margin: 0px 10px 10px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    position: absolute;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    top: 170px;
+    left: 1.5%;
+
+    border-collapse: collapse;
+    width: 97%;
+    max-width: 97%;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #291a1a;
+}
+
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+    border-right: 1px solid #1A2929;
+}
+
+td {
+    font-size: 12px;
+}
+
+thead th {
+    color: #ffffff;
+    background: #1A2929;
+}
+
+tr:nth-child(even) {
+    background: #9EDFD3;
+}
+
+/* Responsive code */
+
+@media (max-width: 767px) {
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    thead,
+    tbody,
+    thead th {
+        display: block;
+    }
+
+    thead th:last-child {
+        border-bottom: none;
+    }
+
+    thead {
+        float: left;
+    }
+
+    tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    td,
+    th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+
+    tbody tr {
+        display: table-cell;
+    }
+
+    tbody tr:nth-child(odd) {
+        background: none;
+    }
+
+    tr:nth-child(even) {
+        background: transparent;
+    }
+
+    tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #1A2929;
+    }
+
+    tr td:nth-child(even) {
+        background-color: #9EDFD3;
+        border-right: 1px solid #1A2929;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+/* table */
+/* table table table table table table */
+/* table */
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-style);
+    background-color: #131315;
+}
+
+.card {
+    position: absolute;
+    top: 590px;
+    left: 16.5%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 430px;
+    background: #5F8D4E;
+    box-shadow: 0 0 20px #5F8D4E;
+    border-radius: 20px;
+    transition: transform .8s ease-in;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card1 {
+    position: absolute;
+    top: 575px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: #5F8D4E;
+    box-shadow: 0 0 20px #5F8D4E;
+    border-radius: 20px;
+    transition: transform .8s ease-in;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card2 {
+    position: absolute;
+    top: 560px;
+    left: 83.5%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 370px;
+    background: #5F8D4E;
+    box-shadow: 0 0 20px #5F8D4E;
+    border-radius: 20px;
+    transition: transform .8s ease-in;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card3 {
+    position: absolute;
+    top: 1020px;
+    left: 16.5%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 390px;
+    background: #5F8D4E;
+    box-shadow: 0 0 20px #5F8D4E;
+    border-radius: 20px;
+    transition: transform .8s ease-in;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card4 {
+    position: absolute;
+    top: 1050px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 480px;
+    background: #5F8D4E;
+    box-shadow: 0 0 20px #5F8D4E;
+    border-radius: 20px;
+    transition: transform .8s ease-in;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.text_back {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    background: #131315;
+    border: 1px solid #285430;
+    box-shadow: 0 0 20px #285430;
+    border-radius: 0px 0px 20px 20px;
+}
+
+h1 {
+    border-bottom: 1px solid #A4BE7B;
+    padding-bottom: 8px;
+    font-size: 1.5vw;
+    font-weight: 100;
+    direction: rtl;
+    color: #E5D9B6;
+    font-family: "B Titr";
+    text-align: right;
+}
+
+.text_back div {
+    width: 85%;
+    margin: auto;
+}
+
+p {
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: 5%;
+    direction: rtl;
+    font-family: "IRAN Sans";
+    text-align: right;
+    color: #ffffff;
+}
+
+.Span,
+.SpanB,
+.Span1,
+.SpanB1,
+.Span2,
+.SpanB2,
+.Span3,
+.SpanB3,
+.Span4,
+.SpanB4 {
+    color: #E5D9B6;
+    display: block;
+    padding: 1px 0;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    color: #E5D9B6;
+    /* barayeh bozorg kardanhooroof */
+    font-family: "B Titr";
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1.5px solid #5F8D4E;
+    background-color: transparent;
+}
+
+.SpanB {
+    margin: 25% 0 0 10%;
+    width: 80%;
+}
+
+.SpanB1 {
+    margin: 18% 0 0 10%;
+    width: 80%;
+}
+
+.SpanB2 {
+    margin: 10% 0 0 10%;
+    width: 80%;
+}
+
+.SpanB3 {
+    margin: 67% 0 0 10%;
+    width: 80%;
+}
+
+.SpanB4 {
+    margin: 50% 0 0 10%;
+    width: 80%;
+}
+
+.transition .card,
+.transition1 .card1,
+.transition2 .card2,
+.transition3 .card3,
+.transition4 .card4 {
+    transform: translate(-50%, -50%) rotateY(190deg);
+}
+
+.transitionB .card,
+.transitionB1 .card1,
+.transitionB2 .card2,
+.transitionB3 .card3,
+.transitionB4 .card4 {
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+.image_container {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+    background: url(../imags/Gave_Khall.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_container1 {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+    background: url(../imags/gousfand.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_container2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+    background: url(../imags/Gousfand_Saleas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_container3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background: url(../imags/Nisi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_container4 {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+    background: url(../imags/Oghab.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.flip-card-back {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* Safari */
+    align-items: center;
+    backface-visibility: hidden;
+    background-color: #19191A;
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 30px #E5D9B6;
+}
+
+.flip-card-back3 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 585px;
+    border-radius: 20px;
+    /* Safari */
+    align-items: center;
+    backface-visibility: hidden;
+    background-color: #19191A;
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 30px #E5D9B6;
+}
+
+.flip-card-back4 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 530px;
+    border-radius: 20px;
+    /* Safari */
+    align-items: center;
+    backface-visibility: hidden;
+    background-color: #19191A;
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 30px #E5D9B6;
+}
+
+.button {
+    display: block;
+    padding: 7px 0;
+    width: 45%;
+    text-decoration: none;
+    font-size: 16px;
+    color: #E5D9B6;
+    /* barayeh bozorg kardanhooroof */
+    font-family: "B Titr";
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1.5px solid #5F8D4E;
+    background-color: transparent;
+}
+
+.Button {
+    display: flex;
+    margin: 45% 0 0 10%;
+
+}
+
+.Button1 {
+    display: flex;
+    margin: 0 0 0 10%;
+}
+
+button:hover {
+    background: #5F8D4E;
+    color: #E5D9B6;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #5F8D4E, 0 0 25px #5F8D4E, 0 0 50px #A4BE7B, 0 0 100px #5F8D4E;
+}
