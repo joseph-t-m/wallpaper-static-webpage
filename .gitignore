@@ -3,7 +3,7 @@ logs
 *.log
 
 
-/sf
+sf/
 images/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
